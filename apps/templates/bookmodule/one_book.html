@@ -1,14 +1,14 @@
-<!DOCTYPE html>
-<html lang="en">
-  {% load static %} <!-- load static -->
+{% extends "layouts/base.html" %}
+{% load static %} <!-- load static -->
 <head>
- <title>Show one Book</title>
+{% block title %} Show One Book {% endblock title %}
+{% block content %}
+
  <meta name="keywords" content="Books, recent, Learning, library">
  <meta name="description" content="Books website">
  <meta name="author" content="author name">
   <link rel="stylesheet" href="{% static 'styles.css' %}"> <!-- static template tag -->
 </head>
-<body>
 <a href="{% url "books.list_books" %}">Go Back</a>
 <h1>Details of Book1</h1>
 <h2>Internet & World Wide Web How to Program</h2>
@@ -17,5 +17,4 @@
 clear, simple, engaging and entertaining introduction to Internet and web
 programming. It’s appropriate for both introductory and intermediate-level clientside and server-side programming courses.</p>
 <img src="{% static 'book1.jpg' %}" alt="Book1 img desc" width="200" height="200">
-</body>
-</html>
+{% endblock content %}

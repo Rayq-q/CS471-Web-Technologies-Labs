@@ -1,8 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
+{% extends "layouts/base.html" %}
 {% load static %} <!-- load static -->
-<head>
- <title>List of Books</title>
+{% block title %} List of Books {% endblock title %}
+{% block content %}
  <meta name="keywords" content="Books, recent, Learning, library">
  <meta name="description" content="Books website">
  <meta name="author" content="author name">
@@ -20,14 +19,8 @@
 
  </style>
   <link rel="stylesheet" href="{% static 'styles.css' %}"> <!-- static template tag -->
-</head>
-<body>
- <div class="topnav"> <!-- add class attribute -->
- <a class="active" href="{% url "books.index" %}">Home</a> <!-- URL template tag-->
- <a href="{% url "books.list_books" %}">List Books</a> <!-- URL template tag -->
- <a href="{% url "books.aboutus" %}">About</a> <!-- URL template tag -->
- </div>
 
+  <body>
  <h1>List of Books</h1>
  <a href="{% url 'books.view_one_book' bookId=3 %}"><h2>Internet & World Wide Web How to Program</h2></a>
  <a href="one_book.html"><img src="{% static 'book1.jpg' %}" alt="Book1 img desc" width="200"
@@ -40,4 +33,4 @@ height="200"></a>
  <img src="{% static 'book3.jpg' %}" alt="Book3 img desc" width="200" height="200">
  <hr>
 </body>
-</html>
+{% endblock content %}
