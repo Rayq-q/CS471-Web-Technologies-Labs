@@ -1,0 +1,117 @@
+/* 1. STYLING THE CLASS (Applies to all three links) */
+.my-link {
+    display: block;        /* Makes the link stretch across the whole page like a block */
+    text-align: center;    /* Centers the text perfectly in the middle */
+    padding: 20px;         /* Adds breathing room (space) inside the box around the text */
+    font-family: Arial, sans-serif; /* Makes the font look clean */
+    font-size: 18px;
+}
+
+/* 2. STYLING THE IDs (Applies unique colors to each specific link) */
+#link1 {
+    background-color: lightgreen;
+    color: red;
+}
+
+#link2 {
+    background-color: #4b4b4b; /* Dark Gray */
+    color: yellow;
+}
+
+#link3 {
+    background-color: black;
+    color: white;
+}
+
+/* 3. STYLING THE STATES (How links react when you interact with them) */
+
+/* Visited: How it looks if you have already clicked it in the past */
+.my-link:visited {
+    font-style: italic; 
+}
+
+/* Hover: How it looks when your mouse pointer is hovering over it */
+.my-link:hover {
+    opacity: 0.8; /* Makes the color fade slightly so you know you are hovering over it */
+    border: 2px solid white; /* Adds a white border */
+}
+
+/* Active (Action): How it looks the exact split-second you are clicking down on it */
+.my-link:active {
+    font-weight: bold; /* Makes the text thick when clicked */
+}
+
+
+/* Styling for the Task 2 Heading */
+h1 {
+    background-color: #f2f5e9; /* Gives it that light grayish-green background */
+    color: #228b22; /* Forest green text color */
+    padding: 15px; /* Adds space inside the colored box so the text isn't touching the edges */
+    font-family: "Times New Roman", Times, serif; /* Matches the font style in the image */
+}
+
+/* Optional: Make the paragraphs look a bit cleaner */
+p {
+    font-family: Arial, sans-serif;
+    margin-bottom: 15px; /* Adds a bit of space between each line */
+}
+
+
+/* Styling for the Task 3 Heading */
+#task3-heading {
+    background-color: #5b9292; /* The teal/blue-green color */
+    color: white;              /* Makes the text white */
+    padding: 15px;             /* Adds space inside the box */
+    font-family: "Times New Roman", Times, serif; 
+}
+
+/* Changes the bullet style for our nested unordered list */
+.hollow-bullets {
+    list-style-type: circle; /* This changes the default solid dot to a hollow circle */
+}
+
+
+/* Center all tables on the page */
+table {
+    margin: 0 auto; /* Pushes the table to the exact middle of the screen */
+    text-align: center; /* Centers the text inside the cells */
+}
+
+/* STYLING FOR TABLE 1 (Double borders) */
+#table1 {
+    border: 2px outset gray; 
+    border-collapse: separate; /* This creates that classic double-line look */
+    border-spacing: 2px;
+}
+
+#table1 th, #table1 td {
+    border: 1px inset gray;
+    padding: 5px 15px; /* Adds space inside the cells */
+}
+
+#table1 caption {
+    margin-bottom: 5px;
+}
+
+/* STYLING FOR TABLE 2 (Single solid borders) */
+#table2 {
+    border-collapse: collapse; /* This merges the borders into a single solid line */
+}
+
+#table2 th, #table2 td {
+    border: 1px solid gray; /* Makes the borders dark gray */
+    padding: 10px;
+}
+
+#table2 caption {
+    margin-bottom: 5px;
+}
+
+/* Removes the extra padding around the image so it fits neatly in its cell */
+.image-cell {
+    padding: 0 !important; 
+}
+
+.image-cell img {
+    display: block; /* Prevents tiny invisible gaps under the image */
+}

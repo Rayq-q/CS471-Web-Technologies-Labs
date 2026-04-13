@@ -1,17 +1,13 @@
-{% extends "layouts/base.html" %}
-{% load static %}
-{% block title %} Links Page {% endblock title %}
-{% block content %}
-<h1 style="color: blue;">This is heading 1 (Library)</h1> <!-- add inline css -->
-<p style="color: white;background-color: black;">This is a paragraph text </p> <!--
-add inline css -->
-<a href="https://www.w3schools.com/html/default.asp">Click Here to learn more about
-HTML & CSS</a>
-<hr>
-<!-- This is a comment in HTML, not render in the bowser -->
-<h2>This is heading 2</h2>
-<p>This is some other text. <br/> with newline <br/> and another line</p>
-<hr>
-<h2>This is heading 2</h2>
-<p>This is some other text.</p>
-{% endblock content %}
+<!DOCTYPE html>
+<html>
+    {% load static %} 
+<head>
+    <title>Links Task</title>
+    <link rel="stylesheet" href="{% static 'main.css' %}">
+</head>
+<body>
+    <a href="https://www.qu.edu.sa" target="_blank" id="link1" class="my-link">Go to QU website (open a new tab)</a>
+    <a href="https://www.qu.edu.sa" id="link2" class="my-link">Go to QU website (open in the same page/tab)</a>
+    <a href="https://www.qu.edu.sa" id="link3" class="my-link">Go to QU website (open in the same page/tab)</a>
+</body>
+</html>
